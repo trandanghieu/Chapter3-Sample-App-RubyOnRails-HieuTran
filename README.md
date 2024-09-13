@@ -1,24 +1,14 @@
-# README
+# Chapter 5: Filling in the layout
+| Page     | URL      | Named Route   |
+|----------|----------|---------------|
+| Home     | /        | root_path     |
+| About    | /about   | about_path    |
+| Help     | /help    | help_path     |
+| Contact  | /contact | contact_path  |
+| Sign up  | /signup  | signup_path   |
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![](https://i.imgur.com/reBr04V.png)
+![](https://i.imgur.com/tlf7fzq.png)
+![](https://i.imgur.com/6C0hGK0.png)
+![](https://i.imgur.com/9T4LY1b.png)
+![](https://i.imgur.com/tlf7fzq.png)
