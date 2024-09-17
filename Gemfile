@@ -8,6 +8,7 @@ gem 'htmlbeautifier'
 gem 'bootstrap-sass', '3.4.1'
 gem 'sprockets-rails'
 gem 'rails-controller-testing'
+gem 'config'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.0.6', '>= 6.0.6.1'
