@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/new'
   root 'static_pages#home'
 
   get '/help', to: 'static_pages#help'
@@ -10,5 +9,6 @@ Rails.application.routes.draw do
   get 'foo/bar'
   get 'foo/baz'
 
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :users
+  get 'users/new'
 end
