@@ -196,15 +196,34 @@ input {
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 10px;
-  }
-  
-  .alert-success {
+}
+
+.alert-success {
     background-color: #d4edda;
     color: #155724;
-  }
-  
-  .alert-error {
+}
+
+.alert-error {
     background-color: #f8d7da;
     color: #721c24;
-  }
-  
+}
+
+@media (max-width: 800px) {
+    footer {
+        small {
+            display: block;
+            float: none;
+            margin-bottom: 1em;
+        }
+
+        ul {
+            float: none;
+            padding: 0;
+
+            li {
+                float: none;
+                margin-left: 0;
+            }
+        }
+    }
+}
