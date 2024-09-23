@@ -4,9 +4,8 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
-
   def index
-    @users = User.paginate(page: params[:page], per_page: 10)
+    @users = User.paginate(page: params[:page], per_page: Settings.defaults.per_page)
   end
 
   def new
@@ -14,7 +13,6 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user
   end
 
   def create
@@ -43,7 +41,6 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user
   end
 
   def update
@@ -71,6 +68,10 @@ class UsersController < ApplicationController
   end
 
   def set_user
-    @user = User.find(params[:id])
+    @user = User.find_by(id: params[:id])
+    return if @user
+
+    flash[:alert] = 'User not found.'
+    redirect_to users_path
   end
 end
