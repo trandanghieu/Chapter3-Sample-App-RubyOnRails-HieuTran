@@ -9,7 +9,6 @@ gem 'bootstrap-sass', '3.4.1'
 gem 'sprockets-rails'
 gem 'rails-controller-testing'
 gem 'config'
-gem 'faker', '2.21'
 gem 'will_paginate', '3.3.0'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'i18n', '1.14.5'
@@ -49,6 +48,7 @@ group :development, :test do
   gem 'rubocop-packaging', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
+  gem 'faker', '2.21'
 end
 
 group :development do
