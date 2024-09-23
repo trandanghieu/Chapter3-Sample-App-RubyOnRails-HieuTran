@@ -9,6 +9,10 @@ gem 'bootstrap-sass', '3.4.1'
 gem 'sprockets-rails'
 gem 'rails-controller-testing'
 gem 'config'
+gem 'will_paginate', '3.3.0'
+gem 'bootstrap-will_paginate', '1.0.0'
+gem 'i18n', '1.14.5'
+gem 'ruby-lsp', '>= 0.18.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.0.6', '>= 6.0.6.1'
@@ -44,6 +48,7 @@ group :development, :test do
   gem 'rubocop-packaging', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
+  gem 'faker', '2.21'
 end
 
 group :development do
