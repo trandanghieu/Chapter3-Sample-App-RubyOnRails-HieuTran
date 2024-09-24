@@ -14,6 +14,7 @@ gem 'bootstrap-will_paginate', '1.0.0'
 gem 'i18n', '1.14.5'
 gem 'ruby-lsp', '>= 0.18.0'
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.0.6', '>= 6.0.6.1'
 # Use sqlite3 as the database for Active Record
@@ -49,6 +50,7 @@ group :development, :test do
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
   gem 'faker', '2.21'
+  gem 'dotenv-rails'
 end
 
 group :development do
@@ -58,6 +60,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'letter_opener'
 end
 
 group :test do
