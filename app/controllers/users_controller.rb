@@ -5,8 +5,10 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
   before_action :activated_user, only: [:show]
 
+  scope :activated, -> { where(activated: true) }
+
   def index
-    @users = User.where(activated: true).paginate(page: params[:page], per_page: Settings.defaults.per_page)
+    @users = User.activated.paginate(page: params[:page], per_page: Settings.defaults.per_page)
   end
 
   def new
