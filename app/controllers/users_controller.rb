@@ -14,6 +14,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.paginate(page: params[:page], per_page: 10)
   end
 
   def create
@@ -33,10 +34,6 @@ class UsersController < ApplicationController
     store_location
     flash[:danger] = 'Please log in.'
     redirect_to login_url
-  end
-
-  def correct_user
-    redirect_to(root_url) unless @user == current_user
   end
 
   def edit
@@ -60,6 +57,10 @@ class UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:name, :email, :password, :password_confirmation)
+  end
+
+  def correct_user
+    redirect_to(root_url) unless @user == current_user
   end
 
   def admin_user
