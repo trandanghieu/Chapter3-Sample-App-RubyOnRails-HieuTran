@@ -65,7 +65,7 @@ class User < ApplicationRecord
   end
 
   def feed
-    Micropost.where('user_id = ?', id)
+    Micropost.by_user(id).recent
   end
 
   private
