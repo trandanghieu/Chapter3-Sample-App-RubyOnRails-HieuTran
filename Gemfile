@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.0'
-
+gem 'active_storage_validations', '0.8.2'
 gem 'bcrypt', '3.1.13'
 gem 'htmlbeautifier'
 gem 'bootstrap-sass', '3.4.1'
@@ -13,6 +13,8 @@ gem 'will_paginate', '3.3.0'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'i18n', '1.14.5'
 gem 'ruby-lsp', '>= 0.18.0'
+gem 'image_processing', '1.9'
+gem 'mini_magick', '4.11'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
